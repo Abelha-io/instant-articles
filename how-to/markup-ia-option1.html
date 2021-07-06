@@ -1,0 +1,17 @@
+Marcação de Instant Article (opção 1)
+Nosso rastreador acessa o artigo quando alguém compartilha a respectiva URL pela primeira vez no Facebook. Se localizar a ia:markup_url, ingerirá automaticamente o Instant Article da URL fornecida.
+
+Para artigos existentes criados pelo método Ingestão do rastreador, se nosso rastreador não detectar esta marcação, ele excluirá o Instant Article correspondente da sua Página do Facebook.
+
+Como adicionar as metatags
+No artigo da Web, é necessário fazer referência a duas metatags importantes:
+
+O número de identificação da Página do Facebook como destino do conteúdo do Instant Articles importado:
+<meta property="fb:pages" content="{PAGE_ID}">
+Observação: se você tiver vários números de identificação de Página nesta marcação, certifique-se de que o primeiro corresponda ao número de identificação da Página utilizado para importar conteúdo dos Instant Articles.
+A URL (pública e auto-hospedada) que contém a marcação do Instant Article da respectiva Página:
+<meta property="ia:markup_url" content="{URL}">
+Opcionalmente, você pode especificar property="ia:markup_url_dev" para importar a marcação para o feed de desenvolvimento para fins de teste.
+
+Atualização
+Para atualizar os Instant Articles criados pelo método de Ingestão do rastreador, siga as instruções em Como atualizar objetos.
